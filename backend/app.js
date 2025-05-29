@@ -19,7 +19,7 @@ const app = express();
 
 app.use(
     cors({
-        origin: "http://localhost:5173",
+        origin: "ferreteria-epa-beige.vercel.app",
         credentials: true
     })
 );

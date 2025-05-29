@@ -28,7 +28,7 @@ const Providers = ({ onLogOut, onNavigateToProducts, onNavigateToBrands, userInf
     const fetchProviders = async () => {
         try {
             setIsLoading(true);
-            const response = await fetch('http://localhost:4000/api/providers');
+            const response = await fetch('https://ferreteriaepa-1vms.onrender.com/api/providers');
             if (!response.ok) {
                 throw new Error('Error al cargar proveedores');
             }

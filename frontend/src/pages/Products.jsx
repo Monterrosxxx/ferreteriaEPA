@@ -28,7 +28,7 @@ const Products = ({ onLogOut, onNavigateToBrands, onNavigateToProviders, userInf
     const fetchProducts = async () => {
         try {
             setLoading(true);
-            const response = await fetch('http://localhost:4000/api/products');
+            const response = await fetch('https://ferreteriaepa-1vms.onrender.com/api/products');
             if (!response.ok) {
                 throw new Error('Error al cargar productos');
             }
