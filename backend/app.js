@@ -14,6 +14,7 @@ import brandsRoutes from "./src/routes/brands.js";
 import cookieParser from "cookie-parser";
 import authRoutes from './src/routes/authRoutes.js';
 import cors from "cors";
+import faqsRouter from './src/routes/faqs.js';
 
 const app = express();
 
@@ -39,5 +40,6 @@ app.use("/api/recoveryPassword", recoveryPasswordRoutes);
 app.use("/api/providers", providersRoutes);
 app.use("/api/brands", brandsRoutes);
 app.use("/api", authRoutes);
+app.use("/api/faqs", faqsRouter);
 
 export default app;
